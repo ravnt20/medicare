@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<style>
+    @media screen and (max-width:768px){
+        nav{
+            ul{
+                display:none;
+                position:absolute;
+                background-color: aqua;
+                flex-direction:column;
+                top:60px;
+                width:auto;
+                padding:10px;
+            }
+            .show{
+                display: flex;
+            }
+            .menu{
+                position: relative;
+                display: block;
+                font-size: 30px;
+            }
+        }
+    }
+</style>
+<body>
+     <!-- header start -->
+    <header class="bg-white flex justify-between items-center pt-4 shadow-md w-[100%] shadow-slate-200">
+        <!-- country -->
+        <div class="flex justify-evenly items-center gap-2 mr-10 md:mr-0 ml-12">
+            <img src="./images/united-states.svg" alt="" class="h-[50px] md:w-[50px] mb-3">
+            <i class="ri-arrow-down-s-fill text-2xl mb-3"></i>
+        </div>
+        <!-- searchbutton -->
+        <div class="flex items-center justify-between border border-gray-900  bg-white rounded-lg px-3 py-3 mr-100">
+            <input type="text" placeholder="search" class="md:w-[40%]  text-gray-900 bg-transparent">
+            <i class="ri-search-line"></i>
+        </div>
+        <!-- buttons -->
+        <div class=" hidden  md:flex justify-evenly items-center gap-5 mr-5">
+            <button
+                class="p-2 text-xl border border-red-500 text-red-400 rounded-md hover:scale-95 hover:cursor-pointer hover:bg-red-300">Find
+                a doctor</button>
+            <button
+                class="p-2 text-xl bg-blue-500 border border-black rounded-md hover:scale-95 hover:cursor-pointer hover:bg-blue-950 text-white">Request
+                Appointment</button>
+        </div>
+    </header>
+    <!-- first header end -->
+    <!-- header2start -->
+    <!-- overall parent -->
+    <header class="bg-gray-100 file:00 min-h-[25vh]  flex-col md:flex-row flex items-center justify-evenly">
+        <!-- medicare icon parent -->
+        <div class="min-h-[25vh] flex justify-between  gap-10 items-center">
+            <img src="./images/logo (2).png" alt="" class="h-[20vh] md:w-[50%] pt-7 md:ml-12">
+        </div>
+        <!-- parent of side content -->
+        <div class="min-h-[25vh] md:w-[50%]  flex-col md:flex-row  hidden md:flex justify-evenly items-center ">
+            <!-- first child address parent -->
+            <div class="flex justify-evenly items-center gap-3 ">
+                <i class="ri-map-pin-line text-4xl text-blue-800 mb-12"></i>
+                <div>
+                    <h1 class=" md:text-3xl text-blue-800 font-semibold mb-1">Address</h1>
+                    <p class="text-lg text-gray-500 ml-3">5525 W Slauson Ave, <br>
+                        LA, CA 90056, USA
+                    </p>
+                </div>
+            </div>
+            <!-- parent of appointmnt -->
+            <div class=" flex justify-evenly items-center gap-3">
+                <i class="ri-customer-service-2-line text-4xl text-blue-800 mb-12"></i>
+                <div>
+                    <h1 class="md:text-3xl text-blue-800 font-semibold mb-1">Phone Appointment</h1>
+                    <p class="text-lg text-gray-500 ml-5">(555) 555-1234 <br>
+                        (555) 555-5678
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- second header end  -->
+    <!-- nav start -->
+    <nav class=" bg-blue-900 w-[100%]  min-h-[10vh] flex justify-evenly items-center"><h1 class="text-4xl font-bold text-white"><span class="font-semibold text-red-500">+</span>Medinova</h1>
+      <h1 class="text-4xl font-bold text-white"><span class="font-semibold text-red-500">+</span>Medinova</h1>
+        <i class="ri-menu-line  md:hidden text-3xl text-white"></i>
+        <ul class=" hidden md:flex justify-evenly items-center w-[50%] text-lg text-gray-300">
+            <li class="  md:mt-3"> <a href="./index.html">Home</a> <i class="ri-arrow-down-s-fill"></i></li>
+            <li class="mt-3"> <a href="./about.html" >About</a><i class="ri-arrow-down-s-fill"></i></li>
+            <li class="mt-3"> <a href="./researchers.html">Researches</a><i class="ri-arrow-down-s-fill"></i></li>
+            <li class="mt-3"> <a href="./contact.html">Contact</a><i class="ri-arrow-down-s-fill"></i></li>
+            <li class=" mt-3">Documentation <i class="ri-arrow-down-s-fill"></i></li>
+        </ul>
+    </nav>
+    <!-- section 1 start -->
+      <div class="min-h-[50vh] w-[100%] bg-orange-200 relative" data-aos="zoom-out">
+
+        <img src="./images/doctors handshake.jpg " alt="" class="object-cover h-[100vh]">
+        <div class="absolute inset-0">
+            <h1 class=" text-4xl md:text-7xl  text-blue-900 ml-15 mt-20">Contact</h1>
+            <p class="text-3xl md:text-4xl mt-5 ml-15 text-blue-800">Stay touched
+            </p>
+            <button
+                class="md:text-xl ml-15 mt-7 text-white border border-black bg-blue-800 rounded-lg hover:scale hover:bg-blue-300 hover:text-black hover:scale-110 p-2">Learn
+                More</button>
+        </div>
+    </div>
+    <!-- section1 end -->
+     <!-- below header -->
+    <header class=" flex-col md:flex-row flex justify-evenly items-center min-h-[15vh] bg-blue-100">
+        <div class="min-h-[15vh] md:w-[40%] text-center">
+            <h1 class="text-3xl font-bold md:mt-8 text-blue-900">stay informed. connect with us.
+            </h1>
+        </div>
+        <div class="min-h-[15vh] md:w-[30%] flex justify-evenly items-center">
+            <i class="ri-facebook-circle-fill  text-5xl md:text-6xl"></i>
+            <i class="ri-twitter-fill text-5xl md:text-6xl"></i>
+            <i class="ri-youtube-fill text-5xl md:text-6xl"></i>
+            <i class="ri-instagram-fill text-5xl md:text-6xl"></i>
+            <i class="ri-pinterest-fill text-5xl md:text-6xl"></i>
+        </div>
+    </header>
+    <!-- header complt -->
+     <!-- section 2 start  -->
+      <div class="min-h-[100vh] md:w-[100%] my-10 flex-col md:flex-row flex justify-evenly items-center">
+            <div class="min-h-[90vh] md:w-[50%] flex-col justify-between items-center">
+                <div class="min-h-[20vh] w-[100%]">
+                    <h1 class="md:text-3xl text-blue-900">Important Phone Numbers</h1>
+                    <p class="md:text-2xl text-gray-600">Thank you for your interest that stands at the forefront of clinical care, medical research, and the training and education of physicians.</p>
+                </div>            
+                <div class="min-h-[20vh] w-[100%] bg-blue-200 flex justify-between items-center" data-aos="zoom-out-right">
+<h1 class="md:text-3xl text-gray-500">Hospital General Information and Emergency</h1>
+<p class=" text-xl md:text-2xl text-gray-500">Phone Number</p>
+                </div>
+                <div class="h-[20vh] w-[100%] flex justify-between items-center" data-aos="zoom-out-right">
+                    <h1 class="md:text-4xl text-blue-900 font-bold hover:text-black">Main Number</h1>
+                    <p class="md:text-4xl text-blue-900 font-bold hover:text-black">(555) 555-679</p>
+                </div>
+                <div class="h-[20vh] w-[100%] flex justify-between items-center" data-aos="zoom-out-right">
+                    <h1 class="md:text-4xl text-blue-900 font-bold hover:text-black">Patient Condition Information</h1>
+                    <p class="md:text-4xl text-blue-900 font-bold hover:text-black">(555)555-676</p>
+                </div>
+                <div class="h-[10vh] w-[100%]  flex justify-between items-center" data-aos="zoom-out-right">
+                    <h1 class="md:text-4xl text-blue-900 font-bold hover:text-black">Page Operator</h1>
+                    <p class="md:text-4xl text-blue-900 font-bold hover:text-black">(555) 555-677</p>
+                </div>
+            </div>
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.617889487047!2d-118.27592252514891!3d34.02801797316609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c7dd1ba1654d%3A0xf2468a6c54ea21a3!2sLuskin%20Orthopaedic%20Institute%20for%20Children!5e0!3m2!1sen!2sin!4v1793093792979!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+          </div>
+           <!-- section 6 start -->
+        <div class="min-h-[25vh] bg-blue-950 text-white w-[100%] flex-col md:flex-row flex justify-evenly items-center">
+            <div class="min-h-[20vh] md:w-[30%] flex-col md:flex-row flex justify-evenly items-center">
+                <i class="ri-phone-fill text-2xl  md:text-4xl"></i>
+                <div>
+                    <h1 class=" text-xl md:text-2xl">+(123) 456 78910</h1>
+                    <h2 class=" text-xl md:text-2xl">Have a question? call us now </h2>
+                </div>
+            </div>
+            <div class="min-h-[20vh] md:w-[30%] flex-col md:flex-row flex justify-evenly items-center">
+                <i class="ri-mail-line text-3xl md:text-4xl"></i>
+                <div>
+                    <h1 class=" text-xl md:text-2xl ml-5">help@medicare.com</h1>
+                    <h2 class=" text-xl md:text-xl">Need support? Drop us an email</h2>
+                </div>
+            </div>
+            <div class="min-h-[20vh] md:w-[30%] flex-col  md:flex-row flex justify-evenly items-center">
+                <i class="ri-time-line text-3xl md:text-4xl"></i>
+                <div>
+                    <h1 class=" text-xl md:text-2xl">Mon – Sat 07:00 – 21:00
+                    </h1>
+                    <p class=" text-xl md:text-2xl">We are open on
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- section 6 end  -->
+        <!-- section 7 start -->
+        <!-- main parent -->
+        <div class="min-h-[100vh] w-[100%]  mt-20">
+            <div class="min-h-[50vh] md:w-[100%]  text-blue-900">
+                <img src="./images/logo (2).png" alt="" class=" h-[10vh] md:h-[20vh] md:w-[25%] md:ml-10">
+                <h1 class="text-xl md:text-3xl my-6 ml-9">brigham and women's hospital</h1>
+                <h2 class=" text-xl md:text-2xl ml-9">75 francis street, boston ma 02115</h2>
+                <h2 class=" text-xl md:text-2xl ml-9">General information: 671-732-5500 </h2>
+                <h3 class="text-xl md:text-2xl ml-9">New Patients: 800-294-9999</h3>
+            </div>
+            <div class="min-h-[70vh] w-[100%]  my-10 flex-col md:flex-row flex justify-evenly items-center">
+                <div class="min-h-[65vh] md:w-[20%] ">
+                    <h1 class="text-blue-900 text-4xl font-semibold">Centers</h1>
+                    <div class=" text-xl md:text-2xl text-gray-500 my-3">
+                        <p class="my-3">Cancer Center</p>
+                        <p class="my-3">Heart & Vascular Center</p>
+                        <p class="my-3">The Lung Center</p>
+                        <p class="my-3">Neurosciences Center</p>
+                        <p class="my-3">Orthopaedic & Arthritis Center</p>
+                        <p class="my-3">Primary Care Center</p>
+                        <p class="my-3">Women's Health Center</p>
+                    </div>
+                </div>
+                <div class="min-h-[65vh] md:w-[20%] ">
+                    <h1 class="text-3xl font-semibold text-blue-900">Clinical Departments</h1>
+                    <div class=" text-xl md:text-2xl text-gray-500 my-3">
+                        <p class="my-3">Anesthesiology</p>
+                        <p class="my-3">Dermatology</p>
+                        <p class="my-3">Emergency Medicine</p>
+                        <p class="my-3">Medicine</p>
+                        <p class="my-3">Neurology</p>
+                    </div>
+                </div>
+                <div class="min-h-[65vh] md:w-[20%]">
+                    <div class=" text-xl md:text-2xl text-gray-500 my-3">
+                        <p class="my-3">Cancer Center</p>
+                        <p class="my-3">Heart & Vascular Center</p>
+                        <p class="my-3">The Lung Center</p>
+                        <p class="my-3">Neurosciences Center</p>
+                        <p class="my-3">Orthopaedic & Arthritis Center</p>
+                        <p class="my-3">Primary Care Center</p>
+                        <p class="my-3">Women's Health Center</p>
+                    </div>
+                </div>
+                <div class="min-h-[65vh] md:w-[20%] ">
+                    <h1 class="text-3xl font-semibold text-blue-900">Departments</h1>
+                    <div class="text-2xl text-gray-500 my-3">
+                        <p class="my-3">Anesthesiology</p>
+                        <p class="my-3">Dermatology</p>
+                        <p class="my-3">Emergency Medicine</p>
+                        <p class="my-3">Medicine</p>
+                        <p class="my-3">Neurology</p>
+                        <p class="my-3">Neurosurgery</p>
+                        <p class="my-3">Orthopaedic Surgery</p>
+                        <p class="my-3">Obstetrics and Gynecology</p>
+                        <p class="my-3">Obstetrics and Gynecology</p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!-- footer -->
+        <div class="min-h-[12vh] md:w-[100%] bg-blue-950">
+            <h1 class="text-gray-400 text-xl md:text-2xl text-center my-5">Thank you for creating with medicare | 2026 ©
+                ThemeWagon</h1>
+     </div>
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
+<script>
+let menu = document.querySelector(".menu")
+let ul =  document.querySelector(".ul")
+menu.addEventListener("click",()=>{
+    ul.classList.toggle("show")
+})
+</script>
+</html>
